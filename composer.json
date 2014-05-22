@@ -1,0 +1,15 @@
+{
+  "name": "jasonlotito/twixmo",
+  "description": "Twitter Nexmo search client",
+  "minimum-stability": "dev",
+  "license": "GPL v3",
+  "authors": [
+    {
+      "name": "Jason Lotito",
+      "email": "jasonlotito@gmail.com"
+    }
+  ],
+  "require": {
+    "fennb/phirehose": "master"
+  }
+}
