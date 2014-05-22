@@ -5,6 +5,10 @@ Twitter Nexmo search client
 
 ## Environmental Vars
 
+Yes, these all need to be setup.  You need a Twitter key and secret.  You also need a Nexmo key and secret.  You need
+to set your From and To phone numbers.  From is the number from Nexmo, and To is your number.  Finally, you need your
+oauth key and secret from Twitter for your application.
+
     define('TWITTER_CONSUMER_KEY', getenv('TWITTER_KEY'));
     define('TWITTER_CONSUMER_SECRET', getenv('TWITTER_SECRET'));
     define('NEXMO_KEY', getenv('NEXMO_KEY'));
