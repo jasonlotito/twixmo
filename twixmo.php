@@ -8,6 +8,8 @@ define('NEXMO_KEY', getenv('NEXMO_KEY'));
 define('NEXMO_SECRET', getenv('NEXMO_SECRET'));
 define('NEXMO_FROM', getenv('NEXMO_FROM'));
 define('NEXMO_TO', getenv('NEXMO_TO'));
+define('TWITTER_OAUTH_KEY', getenv('TWITTER_OAUTH_KEY'));
+define('TWITTER_OAUTH_SECRET', getenv('TWITTER_OAUTH_SECRET'));
 
 class Hose extends OauthPhirehose
 {
@@ -39,7 +41,7 @@ class Hose extends OauthPhirehose
     }
 }
 
-$hose = new Hose('5536282-mvWJIqrfS7xV4k4wiFkBK6E4T4dlSgDjTjdqCOfhA4', 'oBzQyo3fmVHVpoQPK1yLh2fLe8QuF9PSKl2qLCMxoEccc', Phirehose::METHOD_FILTER);
+$hose = new Hose(TWITTER_OAUTH_KEY, TWITTER_OAUTH_SECRET, Phirehose::METHOD_FILTER);
 $track = $argv[1];
 $hose->setTrack([$track]);
 $hose->consume(true);
