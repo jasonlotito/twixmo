@@ -31,6 +31,7 @@ Example:
     $ php twixmo.php -s phptek -t 12152371280 --nexmo_key 59od68u2
 
 EOT;
+    exit(0);
 }
 
 define('TWITTER_CONSUMER_KEY', isset($options['twitter_consumer_key']) ? $options['twitter_consumer_key'] : getenv('TWITTER_KEY'));
