@@ -23,6 +23,7 @@ oauth key and secret from Twitter for your application.
 * -f  Nexmo from phone number
 * -t  Nexmo to phone number
 * -s  Search term
+* -i  Include retweets
 * --twitter_oauth_key <key>
 * --twitter_consumer_secret <key>
 * --nexmo_key <key>
