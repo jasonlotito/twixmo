@@ -3,6 +3,20 @@ twixmo
 
 Twitter Nexmo search client
 
+## Requirements
+
+The scripts expects PHP 5.5 and that you have composer installed.
+
+## Setup
+
+    $ composer install
+    
+### 3rd Party Systems
+
+You'll need to setup an application in [Twitter Application Management](https://apps.twitter.com/) and then you'll need to setup OAuth for your account.  You'll also need Nexmo setup as well, and then provide all that information.  You'll see that information below.  You can set it as environmental variables, or you can pass it all in as command line arguments.
+
+This script runs as a long running process.
+
 ## Environmental Vars
 
 Yes, these all need to be setup.  You need a Twitter key and secret.  You also need a Nexmo key and secret.  You need
